@@ -2,61 +2,71 @@
 <html>
 	<head>
 		<title>PlayTables</title>
+			<style>
+        	.container {
+            background: pink;
+            color: green;
+            margin: auto;
+            padding-left: 32px;
+        }
+      </style>
 	</head>
 	<body>
+	    <div class="container">
 	<!-- cellspacing creates space between two cells ; cellpading creates space between the cellcontent and the cellborder-->
-		<table border="1" cellpadding="10" cellspacing="10">
-			<caption align="bottom">HSC Marks</caption>
-			<tr>
-				<td rowspan="3">Marks</td>
-				<td>Physics</td>
-				<td>99</td>
-				<td rowspan="3">Total : 297</td>
-			</tr>
-				
-			<tr>
-				<td>Chemistry</td>
-				<td>99</td>
-			</tr>
-			
-			<tr>
-				<td>Maths</td>
-				<td>99</td>
-			</tr>
-		</table>
-		
-		<br><br>		
-		<!-- differemce between <td> and <th> is that, <th> is used to bold the cell content and align it in the centre -->
-		<table border="1" cellpadding="10" cellspacing="10">
-			<thead>
-				<tr>
-					<th colspan="3">HSC Marks</th>
-				</tr>
-				<tr>
-					<th>Name</th>
-					<th>Roll</th>
-					<th>Marks</th>
-				</tr>
-			</thead>
-			
-			<tbody>
-				<tr>
-					<td>Ajaykumar</td>
-					<td>60004140111</td>
-					<td>98</td>
-				</tr>
-				<tr>
-					<td>Ashutosh</td>
-					<td>60004140111</td>
-					<td>98</td>
-				</tr>
-			</tbody>
-			
-			<tfoot>
-				<th colspan="3">HSC Marksheet 2016</th>
-			</tfoot>	
-			<!--why to use <thead>,<tbody>,<tfoot>??? So that infuture if you wanna modify any element don't modify each element instead modify the group tag <thead>-->	
-		</table>
+        		<table border="1" cellpadding="10" cellspacing="10">
+        			<caption align="bottom">HSC Marks</caption>
+        			<tr>
+        				<td rowspan="3">Marks</td>
+        				<td>Physics</td>
+        				<td>99</td>
+        				<td rowspan="3">Total : 297</td>
+        			</tr>
+        				
+        			<tr>
+        				<td>Chemistry</td>
+        				<td>99</td>
+        			</tr>
+        			
+        			<tr>
+        				<td>Maths</td>
+        				<td>99</td>
+        			</tr>
+        		</table>
+        		
+        		<br><br>		
+        		<!-- differemce between <td> and <th> is that, <th> is used to bold the cell content and align it in the centre -->
+        		<table border="1" cellpadding="10" cellspacing="10">
+        			<thead>
+        				<tr>
+        					<th colspan="3">HSC Marks</th>
+        				</tr>
+        				<tr>
+        					<th>Name</th>
+        					<th>Roll</th>
+        					<th>Marks</th>
+        				</tr>
+        			</thead>
+        			
+        			<tbody>
+        				<tr>
+        					<td>Ajaykumar</td>
+        					<td>60004140111</td>
+        					<td>98</td>
+        				</tr>
+        				<tr>
+        					<td>Ashutosh</td>
+        					<td>60004140111</td>
+        					<td>98</td>
+        				</tr>
+        			</tbody>
+        			
+        			<tfoot>
+        				<th colspan="3">HSC Marksheet 2016</th>
+        			</tfoot>	
+        			<!--why to use <thead>,<tbody>,<tfoot>??? So that infuture if you wanna modify any element don't modify each element instead modify the group tag <thead>-->	
+        		</table>
+		</div>
 		
 	</body>
 </html>
