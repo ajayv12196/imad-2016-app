@@ -5,87 +5,98 @@
 		    ::Register Here::
 		</title>
 	<!--	<meta-name="viewport" content="width=device-width , initial-scale=1" /> -->
+	
+	<style>
+        	.container {
+            background: pink;
+            color: green;
+            margin: auto;
+            padding-left: 32px;
+        }
+   </style>
 	</head>
 	
 	
 	<body>
-	    <div>
-	        <a href="/">home</a>
-	    </div>
-	    <hr>
-		<form method="post"> <!--Method can be either GET or POST. GET is used when you just want to append the data to the server and in this case the data is transfered via the url as: url.html?Name=Ashu&Gender=Male, POST is used when -->
-			<p>
-				<label for="username">Username</label><br>
-				<input type="text" name="username" placeholder="Username" autofocus id="username"> <!--autofocus="true" or autofocus="autofocus" or autofocus-->
-			</p>
-		
-			<p>
-				<label for="uploadpic"> Upload Photo</label><br>
-				<input type="file" name="photo" id="uploadpic">
-			</p>
-		
-			<p>
-				<label for="password">Password</label><br>
-				<input type="password" name="pass" placeholder="Password" id="password">
-			</p>
-		
-			
-			<p> <!--Point-1-->
-				<datalist id="langList">
-					<option>PHP</option>
-					<option>Java</option>
-					<option>Python</option>
-					<option>C++</option>
-					<option>Groovy</option>
-					<option>Javascript</option>
-					<option>C</option>
-					<option>CSS</option>
-				</datalist>
-				<!-- list attr is used to attach the required input type with any of the datalist required. //currently we have only one datalist.-->
-				<input type="text" list="langList" name="language" placeholder="Type to choose">
-			</p>
-		
-			<p>	<!--Point-2-->
-				<label>Country</label><br>
-				<select>
-					<optgroup label="Asia">
-						<option> ---- </option>
-						<option selected>India</option>
-						<option>UAE</option>
-					</optgroup>	
-					<optgroup label="Europe">
-						<option>France</option>
-						<option>Germany</option>
-					<option>Britain</option>
-				</select>
-			</p>
-	<!--The diference between Point-1 i.e. <datalist> associated with <input> and Point-2 i.e. <select> is that, you can enter your own data also in <datalist> if the data required isn't pre-present since it is associated with <input> tag but not in <select> tag, since select tag is a dropdown list-->	
-			<p>
-				Gender<br>
-				<input type="radio" value="m" name="gender" id="male" checked>
-				<label for="male">Male</label>&nbsp;
-				
-				<input type="radio" value="f" name="gender" id="female">
-				<label for="female">Female</label>&nbsp;
-				
-				<input type="radio" value="o" name="gender" id="others">
-				<label for="others">Others</label>
-			</p>
-		
-			<p>
-				Preferences<br>
-				<input type="checkbox" name="travel" id="travel">
-				<label for="travel">Travel</label>&nbsp;
-				
-				<input type="checkbox" name="shopping" id="shopping">
-				<label for="shopping">shop</label>&nbsp;
-				
-				<input type="checkbox" name="sports" id="sports">
-				<label for="sports">Sports</label>
-			</p>
-			<p>
-				<input type="submit" value="Register">		
-			</p>
-		</form>
+	    <div class=container>
+    	    <div>
+    	        <a href="/">home</a>
+    	    </div>
+    	    <hr>
+    		<form method="post"> <!--Method can be either GET or POST. GET is used when you just want to append the data to the server and in this case the data is transfered via the url as: url.html?Name=Ashu&Gender=Male, POST is used when -->
+    			<p>
+    				<label for="username">Username</label><br>
+    				<input type="text" name="username" placeholder="Username" autofocus id="username"> <!--autofocus="true" or autofocus="autofocus" or autofocus-->
+    			</p>
+    		
+    			<p>
+    				<label for="uploadpic"> Upload Photo</label><br>
+    				<input type="file" name="photo" id="uploadpic">
+    			</p>
+    		
+    			<p>
+    				<label for="password">Password</label><br>
+    				<input type="password" name="pass" placeholder="Password" id="password">
+    			</p>
+    		
+    			
+    			<p> <!--Point-1-->
+    				<datalist id="langList">
+    					<option>PHP</option>
+    					<option>Java</option>
+    					<option>Python</option>
+    					<option>C++</option>
+    					<option>Groovy</option>
+    					<option>Javascript</option>
+    					<option>C</option>
+    					<option>CSS</option>
+    				</datalist>
+    				<!-- list attr is used to attach the required input type with any of the datalist required. //currently we have only one datalist.-->
+    				<input type="text" list="langList" name="language" placeholder="Type to choose">
+    			</p>
+    		
+    			<p>	<!--Point-2-->
+    				<label>Country</label><br>
+    				<select>
+    					<optgroup label="Asia">
+    						<option> ---- </option>
+    						<option selected>India</option>
+    						<option>UAE</option>
+    					</optgroup>	
+    					<optgroup label="Europe">
+    						<option>France</option>
+    						<option>Germany</option>
+    					<option>Britain</option>
+    				</select>
+    			</p>
+    	<!--The diference between Point-1 i.e. <datalist> associated with <input> and Point-2 i.e. <select> is that, you can enter your own data also in <datalist> if the data required isn't pre-present since it is associated with <input> tag but not in <select> tag, since select tag is a dropdown list-->	
+    			<p>
+    				Gender<br>
+    				<input type="radio" value="m" name="gender" id="male" checked>
+    				<label for="male">Male</label>&nbsp;
+    				
+    				<input type="radio" value="f" name="gender" id="female">
+    				<label for="female">Female</label>&nbsp;
+    				
+    				<input type="radio" value="o" name="gender" id="others">
+    				<label for="others">Others</label>
+    			</p>
+    		
+    			<p>
+    				Preferences<br>
+    				<input type="checkbox" name="travel" id="travel">
+    				<label for="travel">Travel</label>&nbsp;
+    				
+    				<input type="checkbox" name="shopping" id="shopping">
+    				<label for="shopping">shop</label>&nbsp;
+    				
+    				<input type="checkbox" name="sports" id="sports">
+    				<label for="sports">Sports</label>
+    			</p>
+    			<p>
+    				<input type="submit" value="Register">		
+    			</p>
+    		</form>
+		</div>
 	</body>
 </html>
