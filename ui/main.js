@@ -4,6 +4,9 @@ var button=document.getElementById("counter");
 var counter =0;
 button.onclick =function() {
     
+    counter += 1;
+    
+    
     //create a request object(AJAX)
     
     var request =new XMLHttpRequest();
@@ -36,3 +39,6 @@ button.onclick =function() {
     
     
 };
+
+//submit name
+
